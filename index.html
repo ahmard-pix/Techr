@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>To-Do List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="todo-container">
+<h2>To-Do List</h2>
+<div class="input-row">
+<input
+type="text"
+id="taskInput"
+placeholder="Enter a task"
+minlength="5"
+required
+>
+<button id="addBtn">Add Task</button>
+</div>
+<select id="filter">
+<option value="all">All</option>
+<option value="completed">Completed</option>
+<option value="pending">Pending</option>
+</select>
+<ul id="taskList"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
